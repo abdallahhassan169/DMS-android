@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.dms" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.DayNight" >
+        <activity
+            android:name=".AboutApplication.AboutApplication"
+            android:exported="false" />
+        <activity
+            android:name=".PredictDiabetes.Clustring"
+            android:exported="false" />
+        <activity
+            android:name=".Training.Training"
+            android:exported="false" />
+        <activity
+            android:name=".Spalsh_Activity.slider_activity"
+            android:exported="false" />
+        <activity
+            android:name=".Login.Forget_passward"
+            android:exported="false" />
+        <activity
+            android:name=".Login.log_in"
+            android:exported="true" />
+        <activity
+            android:name=".Login.Log_up"
+            android:exported="false" />
+        <activity
+            android:name=".Spalsh_Activity.splashScreen"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Article.Article_pg"
+            android:exported="false" />
+        <activity
+            android:name=".Meal_Suggestion.Meal_pg"
+            android:exported="false" />
+        <activity
+            android:name=".profile.ProfileAcitvity"
+            android:exported="false" />
+        <activity
+            android:name=".Medical_Reminder.Medicien_Reminder_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Meal_Suggestion.Suggest_meal_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".PredictDiabetes.PredictDiabetes"
+            android:exported="false" />
+        <activity
+            android:name=".Article.ArticalActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HomeActivity.HomeActivity"
+            android:exported="false" />
+    </application>
+
+</manifest>

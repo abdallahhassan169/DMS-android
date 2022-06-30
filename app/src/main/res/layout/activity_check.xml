@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PredictDiabetes.PredictDiabetes">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="309dp"
+        android:background="@color/blue_dark3"
+        android:layout_margin="15dp"
+        android:elevation="15dp"
+        app:cardCornerRadius="30dp">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:background="@color/blue_dark3"
+            app:lottie_autoPlay="true"
+            android:textColor="@color/black"
+
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/predict1" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_marginLeft="15dp"
+            android:fontFamily="@font/mono"
+            android:textSize="30dp"
+            android:layout_gravity="bottom|start"
+            android:text=" Result = "/>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        android:layout_gravity="center"
+        android:layout_margin="15dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="10dp"
+        >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/white">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+
+                    android:orientation="vertical">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        style="@style/modifiedEditText"
+                        android:layout_margin="7dp"
+                        android:hint="Pregnancies"
+                        android:inputType="text"
+                        android:maxLines="1" />
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        style="@style/modifiedEditText"
+                        android:layout_margin="7dp"
+                        android:hint="Glucose"
+                        android:textColor="@color/black"
+
+                        android:inputType="text"
+                        android:maxLines="1" />
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        style="@style/modifiedEditText"
+                        android:layout_margin="7dp"
+                        android:hint="Blood Pressure"
+                        android:inputType="text"
+                        android:maxLines="1" />
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        style="@style/modifiedEditText"
+                        android:layout_margin="7dp"
+                        android:hint="Skin Thickness"
+                        android:inputType="text"
+                        android:textColor="@color/black"
+
+                        android:maxLines="1" />
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        style="@style/modifiedEditText"
+                        android:layout_margin="7dp"
+                        android:hint="Insulin"
+                        android:inputType="text"
+                        android:textColor="@color/black"
+
+                        android:maxLines="1" />
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        style="@style/modifiedEditText"
+                        android:layout_margin="7dp"
+                        android:hint="BMI"
+                        android:inputType="text"
+                        android:textColor="@color/black"
+
+                        android:maxLines="1" />
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        style="@style/modifiedEditText"
+                        android:layout_margin="7dp"
+                        android:hint="Diabetes Pedigree Function"
+                        android:inputType="text"
+                        android:maxLines="1" />
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        style="@style/modifiedEditText"
+                        android:layout_margin="7dp"
+                        android:hint="Age"
+                        android:inputType="text"
+                        android:maxLines="1" />
+
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="260dp"
+        android:layout_marginTop="10dp"
+        android:onClick="sendtoBredict"
+        android:textColor="@color/white"
+        android:background="@color/blue_dark3"
+        android:text="send" />
+
+</LinearLayout>
